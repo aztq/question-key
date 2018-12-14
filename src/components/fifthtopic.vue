@@ -34,6 +34,11 @@ export default {
         {
           alert('请选择答案')
         }
+         if(this.current==1){
+           this.$store.commit('increase');
+           this.$store.commit('judge');
+         }
+         
      }   
    }
 }

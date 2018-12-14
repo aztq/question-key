@@ -15,7 +15,6 @@ export default {
     return {
       title:'1+3=___',
       current:-1,
-      arrkey:[0,1,2,3],
       url:'/firsttopic',
       answer:
       [ {name:'A.大发噶空间冷静啊'},
@@ -27,13 +26,19 @@ export default {
   methods:{
      al:function(index){
        this.current=index;
-       alert(this.current);
+       //alert(this.current); 确认答案的键 🗡
        this.url='/stopic'
      },
      judge:function(){
+        
+       //判断是否选择答案
         if(this.current!=0&&this.current!=1&&this.current!=2&&this.current!=3)
         {alert('请选择答案')
-        }
+         }
+         if(this.current==1){
+           this.$store.commit('increase')
+         }
+         this.$store.commit('judge')
      }   
    }
 }

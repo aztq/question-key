@@ -1,9 +1,11 @@
 <template>
    <div class='fontPage'>
     <img id='mark' src='../assets/4-2.png'>
-    <span>{{grade}}</span>
+    <span>{{this.$store.state.finalmark}}</span>
+    <li>{{this.$store.state.command}}</li>
     <img id='btn' src='../assets/4-3.png'>
     <span id='info'>关注xxxx</span>
+    
    </div>
 </template>
 
@@ -12,7 +14,7 @@ export default {
   name: 'result',
   data () {
     return {
-      grade:'wefwe'
+      
     }
   }
 }
@@ -34,9 +36,15 @@ export default {
 }
 span{
     position:absolute;
-    top:23%;
-    left:41%;
+    top:20%;
+    left:50%;
     font-size:1.5rem;
+}
+li {
+    position:absolute;
+    top:25%;
+    left:30%;
+    font-size:1.4rem;
 }
 #btn{
   top:38%;

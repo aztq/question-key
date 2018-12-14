@@ -32,6 +32,9 @@ export default {
     judge:function(){
         if(this.current!=0&&this.current!=1&&this.current!=2&&this.current!=3)
         {alert('请选择答案')}
+         if(this.current==1){
+           this.$store.commit('increase')
+         }
      }   
    }
 }

@@ -31,6 +31,6 @@ li{
   font-size:2rem;
 }
 .selected{
-  color:red;
+  color:#516aa0;
 }
 </style>

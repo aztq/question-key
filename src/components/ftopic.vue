@@ -2,7 +2,7 @@
    <div class='fontPage'>
     <ul>
        <li class='first'>{{title}}</li>
-      <li @click='al(index)' :class='{selected:index==current}' v-for='(item,index) in answer'>{{item.name}}</li>
+      <li @click='al(index)' :class='{selected:index==current}' v-for='(item,index) in answer' :key=index>{{item.name}}</li>
     </ul>
     <router-link :to=url><img id='btn' @click='judge' src='../assets/2-2.png'></router-link>
    </div>
@@ -17,8 +17,8 @@ export default {
       current:-1,
       url:'/ftopic',
       answer:
-      [ {name:'A.大发噶空间冷静啊'},
-        {name:'B.大发噶客观冷静啊'},
+      [ {name:'A.I have succeed '},
+        {name:'B.what do i do in something'},
         {name:'C.大发噶空间大的客观冷静啊'},
         {name:'D.大发噶空间大的客观冷静啊'}]
        }
@@ -31,6 +31,9 @@ export default {
      judge:function(){
         if(this.current!=0&&this.current!=1&&this.current!=2&&this.current!=3)
         {alert('请选择答案')}
+         if(this.current==1){
+           this.$store.commit('increase')
+         }
      }   
    }
 }
