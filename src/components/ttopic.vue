@@ -13,15 +13,15 @@ export default {
   name: 'ttopic',
    data () {
     return {
-      title:'1+3=___',
+      title:'3.猎天使魔女2中主角是什么发型？',
       current:-1,
       arr:[0,1,2,3],
       url:'ttopic',
       answer:
-      [ {name:'A.大发噶空间冷静啊'},
-        {name:'B.大发噶客观冷静啊'},
-        {name:'C.大发噶空间大的客观冷静啊'},
-        {name:'D.大发噶空间大的客观冷静啊'}]
+      [ {name:'A.短发'},
+        {name:'B.长发'},
+        {name:'C.中分'},
+        {name:'D.黑长直'}]
        }
   },
   methods:{
@@ -32,7 +32,7 @@ export default {
     judge:function(){
         if(this.current!=0&&this.current!=1&&this.current!=2&&this.current!=3)
         {alert('请选择答案')}
-         if(this.current==1){
+         if(this.current==0){
            this.$store.commit('increase')
          }
      }   

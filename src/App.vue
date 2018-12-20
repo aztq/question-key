@@ -12,6 +12,11 @@ export default {
 
 <style>
 @import '../reset.css';
+html{
+  font-size:16px;
+  letter-spacing: 0.01rem;
+  font-family: "Arial","Microsoft YaHei","黑体","宋体",sans-serif;
+}
 #app {
   font-size:16px;
   width:100%;
@@ -19,18 +24,21 @@ export default {
 }
 ul{
   position:absolute;
-  left:18%;
+  left:25%;
   top:15%;
   color:white;
+  width:65%;
 }
 li{
   margin:5%;
   font-size:1rem;
+  
 }
 .first{
-  font-size:2rem;
+  font-size:1rem;
 }
 .selected{
   color:#516aa0;
 }
+
 </style>

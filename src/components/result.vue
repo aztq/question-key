@@ -1,11 +1,10 @@
 <template>
    <div class='fontPage'>
-    <img id='mark' src='../assets/4-2.png'>
-    <span>{{this.$store.state.finalmark}}</span>
-    <li>{{this.$store.state.command}}</li>
+    <img style='' id='mark' src='../assets/4-2.png'>
+    <div><span style=''>{{this.$store.state.finalmark}}分</span></div>
+    <div style='margin-top:-4rem;'><li id='command'>{{this.$store.state.command}}</li></div>
     <img id='btn' src='../assets/4-3.png'>
     <span id='info'>关注xxxx</span>
-    
    </div>
 </template>
 
@@ -16,11 +15,14 @@ export default {
     return {
       
     }
+  },
+  methods:{
   }
 }
 </script>
 
 <style scoped>
+
  .fontPage{
   width:100%;
   height:100%;
@@ -33,24 +35,26 @@ export default {
     width:60%;
     margin-left:19%;
     margin-top:5%;
+    height:30%;
 }
 span{
     position:absolute;
-    top:20%;
-    left:50%;
+    top:19.5%;
+    left:45%;
     font-size:1.5rem;
 }
-li {
-    position:absolute;
-    top:25%;
-    left:30%;
-    font-size:1.4rem;
+#command {
+    font-size:1rem;
+    padding-left:1.2rem;
+    padding-top:0.1%;
+    text-align: center;
 }
 #btn{
-  top:38%;
+  top:40%;
   left:35%;
   position:absolute;
   width:30%;
+  height:3rem;
 }
 #info{
   top:50%;
@@ -59,4 +63,28 @@ li {
   position:absolute;
   width:30%;
 }
+
+/*每句评语的样式
+:class='{twenty:this.$store.state.finalmark==20,
+                 forty:this.$store.state.finalmark==40,
+                 sixty:this.$store.state.finalmark==60,
+                 eighty:this.$store.state.finalmark==80,
+                 hundred:this.$store.state.finalmark==100}'
+.twenty{
+    left:42%;
+}
+.forty{
+    left:35%;
+}
+.sixty{
+    left:42%;
+}
+.eighty{
+    left:35%;
+}
+.hundred{
+    left:42%;
+}
+
+*/
 </style>

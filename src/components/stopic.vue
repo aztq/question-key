@@ -13,15 +13,15 @@ export default {
   name: 'stopic',
    data () {
     return {
-      title:'1+3=___',
+      title:'2.东京喰种的女主是______',
       current:-1,
       url:'stopic',
       arr:[0,1,2,3],
       answer:
-      [ {name:'A.大发噶空间冷静啊'},
-        {name:'B.大发噶客观冷静啊'},
-        {name:'C.大发噶空间大的客观冷静啊'},
-        {name:'D.大发噶空间大的客观冷静啊'}]
+      [ {name:'A.きりしま とう'},
+        {name:'B.雾岛董香'},
+        {name:'C.金木研'},
+        {name:'D.かねき けん'}]
        }
   },
   methods:{

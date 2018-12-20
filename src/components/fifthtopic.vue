@@ -13,14 +13,14 @@ export default {
   name: 'fifthtopic',
    data () {
     return {
-      title:'1+3=___',
+      title:'5.孩子们眼中的希望 是什么形状 ',
       current:-1,
       url:'/fifthtopic',
       answer:
-      [ {name:'A.大发噶空间冷静啊'},
-        {name:'B.大发噶客观冷静啊'},
-        {name:'C.大发噶空间大的客观冷静啊'},
-        {name:'D.大发噶空间大的客观冷静啊'}]
+      [ {name:'A.殇歌传千里  家乡平饥荒'},
+        {name:'B.是否院子有秋千可以荡 口袋里有糖'},
+        {name:'C.是否醒来有面包跟早餐 再喝碗浓汤'},
+        {name:'D.恐惧可在孩子们脸上'}]
        }
   },
   methods:{
@@ -34,11 +34,11 @@ export default {
         {
           alert('请选择答案')
         }
-         if(this.current==1){
+         if(this.current==1|this.current==2){
            this.$store.commit('increase');
-           this.$store.commit('judge');
+           
          }
-         
+         this.$store.commit('judge');
      }   
    }
 }

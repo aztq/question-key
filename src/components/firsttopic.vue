@@ -13,14 +13,14 @@ export default {
   name: 'ftopic',
   data () {
     return {
-      title:'1+3=___',
+      title:'1.下列不属于在抗日战争时期取得的胜利是（ ）',
       current:-1,
       url:'/firsttopic',
       answer:
-      [ {name:'A.大发噶空间冷静啊'},
-        {name:'B.大发噶客观冷静啊'},
-        {name:'C.大发噶空间大的客观冷静啊'},
-        {name:'D.大发噶空间大的客观冷静啊'}]
+      [ {name:'A.平型关大捷'},
+        {name:'B.昆仑关战役'},
+        {name:'C.镇南关大捷'},
+        {name:'D.台儿庄战役'}]
        }
   },
   methods:{
@@ -35,10 +35,9 @@ export default {
         if(this.current!=0&&this.current!=1&&this.current!=2&&this.current!=3)
         {alert('请选择答案')
          }
-         if(this.current==1){
+         if(this.current==2){
            this.$store.commit('increase')
          }
-         this.$store.commit('judge')
      }   
    }
 }

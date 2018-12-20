@@ -13,14 +13,14 @@ export default {
   name: 'ftopic',
   data () {
     return {
-      title:'1+3=___',
+      title:'4.翻译"移动支付"',
       current:-1,
       url:'/ftopic',
       answer:
-      [ {name:'A.I have succeed '},
-        {name:'B.what do i do in something'},
-        {name:'C.大发噶空间大的客观冷静啊'},
-        {name:'D.大发噶空间大的客观冷静啊'}]
+      [ {name:'A.moving payment'},
+        {name:'B.move pay'},
+        {name:'C.moblie payment'},
+        {name:'D.mobile payment'}]
        }
   },
   methods:{
@@ -31,7 +31,7 @@ export default {
      judge:function(){
         if(this.current!=0&&this.current!=1&&this.current!=2&&this.current!=3)
         {alert('请选择答案')}
-         if(this.current==1){
+         if(this.current==3){
            this.$store.commit('increase')
          }
      }   
